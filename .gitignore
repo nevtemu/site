@@ -1,9 +1,9 @@
 # dependencies
 /node_modules
+/temp
 
 # production
 /build
 
 # misc
 .env
-notes.txt
