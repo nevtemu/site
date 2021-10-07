@@ -1,0 +1,30 @@
+{
+    "headers":{"region":{"EN":"Region"}, "area":{"EN":"Area (km2)"}, "population":{"EN":"Population"}, "density":{"EN":"Population density"}, "capital":{"EN":"Administrative center"}, "districts":{"EN":"Raions"}},
+    "regions":[
+        {"id":"cherkasy", "fullName": {"EN": "Cherkasy Oblast"}, "area": 20891, "population": 1291135, "numberOfDistricts": 4, "capital":"Cherkasy" },
+        {"id":"chernihiv", "fullName": {"EN": "Chernihiv Oblast"}, "area": 31851.3, "population": 1104241, "numberOfDistricts": 5, "capital":"Chernihiv" },
+        {"id":"chernivtsi", "fullName": {"EN": "Chernivtsi Oblast"}, "area": 8093.6, "population": 903782, "numberOfDistricts": 3, "capital":"Chernivtsi" },
+        {"id":"dnipro", "fullName": {"EN": "Dnipropetrovsk Oblast"}, "area": 31900.5, "population": 3344073, "numberOfDistricts": 7, "capital":"Dnipro" },
+        {"id":"donetsk", "fullName": {"EN": "Donetsk Oblast"}, "area": 26505.7, "population": 4448031, "numberOfDistricts": 8, "capital":"Donetsk" },
+        {"id":"ivano", "fullName": {"EN": "Ivano-Frankivsk Oblast"}, "area": 13894.0, "population": 1380770, "numberOfDistricts": 6, "capital":"Ivano-Frankivsk" },
+        {"id":"kharkiv", "fullName": {"EN": "Kharkiv Oblast"}, "area": 31401.6, "population": 2755177, "numberOfDistricts": 7, "capital":"Kharkiv" },
+        {"id":"kherson", "fullName": {"EN": "Kherson Oblast"}, "area": 28449, "population": 1091151, "numberOfDistricts": 5, "capital":"Kherson" },
+        {"id":"khmelnytskyi", "fullName": {"EN": "Khmelnytskyi Oblast"}, "area": 20636.2, "population": 1331534, "numberOfDistricts": 3, "capital":"Khmelnytskyi" },
+        {"id":"kyiv", "fullName": {"EN": "Kyiv Oblast"}, "area": 28118.9, "population": 1719602, "numberOfDistricts": 7, "capital":"Kyiv" },
+        {"id":"kirovohrad", "fullName": {"EN": "Kirovohrad Oblast"}, "area": 24577.5, "population": 1014809, "numberOfDistricts": 4, "capital":"Kropyvnytskyi" },
+        {"id":"luhansk", "fullName": {"EN": "Luhansk Oblast"}, "area": 26672.5, "population": 2300412, "numberOfDistricts": 8, "capital":"Luhansk" },
+        {"id":"lviv", "fullName": {"EN": "Lviv Oblast"}, "area": 21823.7, "population": 2545634, "numberOfDistricts": 7, "capital":"Lviv" },
+        {"id":"mykolaiv", "fullName": {"EN": "Mykolaiv Oblast"}, "area": 24587.4, "population": 1186452, "numberOfDistricts": 4, "capital":"Mykolaiv" },
+        {"id":"odessa", "fullName": {"EN": "Odessa Oblast"}, "area": 33295.9, "population": 2387636, "numberOfDistricts": 7, "capital":"Odessa" },
+        {"id":"poltava", "fullName": {"EN": "Poltava Oblast"}, "area": 28735.8, "population": 1493668, "numberOfDistricts": 4, "capital":"Poltava" },
+        {"id":"rivne", "fullName": {"EN": "Rivne Oblast"}, "area": 20038.5, "population": 1152576, "numberOfDistricts": 4, "capital":"Rivne" },
+        {"id":"sumy", "fullName": {"EN": "Sumy Oblast"}, "area": 23823.9, "population": 1166765, "numberOfDistricts": 5, "capital":"Sumy" },
+        {"id":"ternopil", "fullName": {"EN": "Ternopil Oblast"}, "area": 13817.1, "population": 1086694, "numberOfDistricts": 3, "capital":"Ternopil" },
+        {"id":"vinnytsia", "fullName": {"EN": "Vinnytsia Oblast"}, "area": 26501.6, "population": 1646250, "numberOfDistricts": 6, "capital":"Vinnytsia" },
+        {"id":"volyn", "fullName": {"EN": "Volyn Oblast"}, "area": 20135.3, "population": 1038223, "numberOfDistricts": 4, "capital":"Lutsk" },
+        {"id":"zakarpattia", "fullName": {"EN": "Zakarpattia Oblast"}, "area": 12771.5, "population": 1246323, "numberOfDistricts": 6, "capital":"Uzhhorod" },
+        {"id":"zaporizhia", "fullName": {"EN": "Zaporizhzhia Oblast"}, "area": 27168.5, "population": 1805431, "numberOfDistricts": 6, "capital":"Zaporizhzhia" },
+        {"id":"zhytomyr", "fullName": {"EN": "Zhytomyr Oblast"}, "area": 29819.2, "population": 1283201, "numberOfDistricts": 4, "capital":"Zhytomyr" },
+        {"id":"crimea", "fullName": {"EN": "Autonomous republic Crimea"}, "area": 26100, "population": 2033700, "numberOfDistricts": 14, "capital":"Simferopol" }
+    ]
+}

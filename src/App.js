@@ -1,11 +1,13 @@
 // import './App.css';
+import Main from './components/Main'
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+      <>
+        {/* <Header/> */}
+        <Main/>
+        {/* <Footer/> */}
+      </>
   );
 }
-
 export default App;
