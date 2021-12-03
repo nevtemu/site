@@ -5,13 +5,19 @@ import Slider from './Slider'
 import Table from './Table'
 import data from "../data/data.json"
 import Map from "./Map"
+import Language from "./Language"
 import { connect, useSelector } from "react-redux";
 import "./maps/ukraine.css"
 
+import {ReactComponent as ListLayout} from '../assets/layout/list.svg';
+import {ReactComponent as CardsLayout} from '../assets/layout/cards.svg';
+import {ReactComponent as MapLayout} from '../assets/layout/map.svg';
+import {ReactComponent as TableLayout} from '../assets/layout/table.svg';
+import {ReactComponent as SliderLayout} from '../assets/layout/slider.svg';
+
 const Main = ({dispatch}) => {
+    const userLang = navigator.language || navigator.userLanguage;
     const layout = useSelector(state => state.layout.layout);
-    console.log(layout)
-    const userLang = navigator.language || navigator.userLanguage
     let layoutComponent;
     switch(layout){
         case 'map': layoutComponent = <Map clickMode={true} style={{width:800+'px'}}/>; break;
@@ -24,12 +30,13 @@ const Main = ({dispatch}) => {
     return (
         <>
         <div className="flex">
-        <div>{userLang}</div>
-            <div id="layout-map" title="map" className="w-8 h-8 bg-gray-500 border-2 border-red-700" onClick={e => dispatch({type: e.target.title})}></div>
-            <div id="layout-cards" title="cards" className="w-8 h-8 bg-gray-500 border-2 border-red-700" onClick={e => dispatch({type: e.target.title})}></div>
-            <div id="layout-slider" title="slider" className="w-8 h-8 bg-gray-500 border-2 border-red-700" onClick={e => dispatch({type: e.target.title})}></div>
-            <div id="layout-table" title="table" className="w-8 h-8 bg-gray-500 border-2 border-red-700" onClick={e => dispatch({type: e.target.title})}></div>
-            <div id="layout-list" title="list" className="w-8 h-8 bg-gray-500 border-2 border-red-700" onClick={e => dispatch({type: e.target.title})}></div>
+            <div><Language userLang={userLang}/></div>
+
+            <div id="layout-map" className="w-12 h-9" onClick={e => dispatch({type: 'map'})}><MapLayout/></div>
+            <div id="layout-cards" className="w-12 h-9" onClick={e => dispatch({type: 'cards'})}><CardsLayout/></div>
+            <div id="layout-slider" className="w-12 h-9" onClick={e => dispatch({type: 'slider'})}><SliderLayout/></div>
+            <div id="layout-table" className="w-12 h-9" onClick={e => dispatch({type: 'table'})}><TableLayout/></div>
+            <div id="layout-list" className="w-12 h-9" onClick={e => dispatch({type: 'list'})}><ListLayout/></div>
         </div>
         {layoutComponent}
         </>

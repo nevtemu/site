@@ -6,6 +6,7 @@
 > Added Tailwind   
 > Added Router   
 > Added UUID, react-table, react-qr-code    
+> Made layouts logic, created individual region page    
 
 07.10.2021   
 

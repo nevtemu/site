@@ -1,4 +1,7 @@
 import Ukraine from "./flags/_UA.jsx"
+import Russia from "./flags/_RU.jsx"
+import UK from "./flags/_EN.jsx"
+import UAE from "./flags/_AR.jsx"
 import Cherkasy from "./flags/cherkasy.jsx"
 import Chernihiv from "./flags/chernihiv.jsx"
 import Chernivtsi from "./flags/chernivtsi.jsx"
@@ -28,7 +31,11 @@ import Zhytomyr from "./flags/zhytomyr.jsx"
 export default function Flag (props) {
     const style = props.style;
     const flags = {
-        ukraine: Ukraine,
+        ukrainian: Ukraine,
+        english: UK,
+        arabic: UAE,
+        russian: Russia,
+
         cherkasy: Cherkasy,
         chernihiv: Chernihiv,
         chernivtsi: Chernivtsi,
