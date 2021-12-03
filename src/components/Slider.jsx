@@ -1,5 +1,4 @@
-import React from 'react'
-import Card from './Card.js';
+import Card from './Card.jsx';
 import data from "../data/data.json"
 
 const Slider = () => {

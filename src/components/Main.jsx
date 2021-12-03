@@ -1,14 +1,11 @@
-import React from 'react'
 import Card from './Card'
 import List from './List'
 import Slider from './Slider'
 import Table from './Table'
 import data from "../data/data.json"
 import Map from "./Map"
-import Language from "./Language"
 import { connect, useSelector } from "react-redux";
 import "./maps/ukraine.css"
-
 import {ReactComponent as ListLayout} from '../assets/layout/list.svg';
 import {ReactComponent as CardsLayout} from '../assets/layout/cards.svg';
 import {ReactComponent as MapLayout} from '../assets/layout/map.svg';
@@ -16,7 +13,6 @@ import {ReactComponent as TableLayout} from '../assets/layout/table.svg';
 import {ReactComponent as SliderLayout} from '../assets/layout/slider.svg';
 
 const Main = ({dispatch}) => {
-    const userLang = navigator.language || navigator.userLanguage;
     const layout = useSelector(state => state.layout.layout);
     let layoutComponent;
     switch(layout){
@@ -30,7 +26,7 @@ const Main = ({dispatch}) => {
     return (
         <>
         <div className="flex">
-            <div><Language userLang={userLang}/></div>
+
 
             <div id="layout-map" className="w-12 h-9" onClick={e => dispatch({type: 'map'})}><MapLayout/></div>
             <div id="layout-cards" className="w-12 h-9" onClick={e => dispatch({type: 'cards'})}><CardsLayout/></div>

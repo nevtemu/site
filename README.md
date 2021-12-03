@@ -7,6 +7,8 @@
 > Added Router   
 > Added UUID, react-table, react-qr-code    
 > Made layouts logic, created individual region page    
+> Added layout and language buttons. Added clickable links    
+> Added header and footer components. Started work on multilingual support    
 
 07.10.2021   
 

@@ -1,7 +1,5 @@
-import React from 'react'
 import Flag from './Flag.jsx';
 import { Link} from "react-router-dom";
-
 
 const List = ({fullName, capital, id}) => {
     const linkAddress = `/region/${id}`;

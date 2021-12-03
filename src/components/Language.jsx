@@ -4,10 +4,10 @@ function Map (props) {
     const lang = props.userLang;
     let langFlag;
     switch(lang){
-            case 'en-GB': case 'en-US': langFlag='english'; break;
-            case 'ru-RU': langFlag='russian'; break;
-            case 'ua-UA': langFlag='ukranian'; break;
-            case 'ar-AE': langFlag='arabic'; break;
+            case 'EN': langFlag='english'; break;
+            case 'RU': langFlag='russian'; break;
+            case 'UA': langFlag='ukranian'; break;
+            case 'AR': langFlag='arabic'; break;
             default: flagComponent=<div>Something went wrong!</div>
         }
     return (
