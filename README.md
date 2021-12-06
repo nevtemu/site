@@ -1,6 +1,12 @@
 # Starting new website project    
 
 ### Change log:   
+06.12.2021   
+
+> Added translations for data   
+> Corrected error with Ukrainian language detection   
+
+
 03.12.2021   
 
 > Added Tailwind   

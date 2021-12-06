@@ -1,5 +1,5 @@
 {
-    "headers":{"region":{"EN":"Region", "RU":"Регион", "UA":"Регіон"}, "area":{"EN":"Area (km²)", "RU":"Площадь (км²)" , "UA":"Площа (км²)"}, "population":{"EN":"Population", "RU":"Население", "UA":"Населення"}, "density":{"EN":"Population density", "RU":"Плотность населения (чел/км2)", "UA":"Густота населення (ос/км²)"}, "capital":{"EN":"Administrative center", "RU":"Административный центр", "UA":"Адміністративний центр"}, "districts":{"EN":"Raions", "RU":"Количество районов", "UA":"Кількість районів"}},
+    "headers":{"region":{"EN":"Region", "RU":"Регион", "UA":"Регіон"}, "area":{"EN":"Area (km²)", "RU":"Площадь (км²)" , "UA":"Площа (км²)"}, "population":{"EN":"Population", "RU":"Население", "UA":"Населення"}, "density":{"EN":"Population density", "RU":"Плотность населения (чел/км2)", "UA":"Густота населення (ос/км²)"}, "capital":{"EN":"Administrative center", "RU":"Административный центр", "UA":"Адміністративний центр"}, "districts":{"EN":"Number of raions", "RU":"Количество районов", "UA":"Кількість районів"}},
     "regions":[
         {"id":"cherkasy", "fullName": {"EN": "Cherkasy Oblast", "RU":"Черкасская область", "UA":"Черкаська область"}, "area": 20891, "population": 1291135, "numberOfDistricts": 4, "capital":{"EN":"Cherkasy", "RU":"Черкассы", "UA":"Черкаси"} },
         {"id":"chernihiv", "fullName": {"EN": "Chernihiv Oblast", "RU":"Черниговская область", "UA":"Чернігівська область"}, "area": 31851.3, "population": 1104241, "numberOfDistricts": 5, "capital":{"EN":"Chernihiv", "RU":"Чернигов", "UA":"Чернігів"} },
@@ -25,6 +25,6 @@
         {"id":"zakarpattia", "fullName": {"EN": "Zakarpattia Oblast", "RU":"Закарпатская область", "UA":"Закарпатська область"}, "area": 12771.5, "population": 1246323, "numberOfDistricts": 6, "capital":{"EN":"Uzhhorod", "RU":"Ужгород", "UA":"Ужгород"} },
         {"id":"zaporizhia", "fullName": {"EN": "Zaporizhzhia Oblast", "RU":"Запорожская область", "UA":"Запорізька область"}, "area": 27168.5, "population": 1805431, "numberOfDistricts": 6, "capital":{"EN":"Zaporizhzhia", "RU":"Запорожье", "UA":"Запоріжжя"} },
         {"id":"zhytomyr", "fullName": {"EN": "Zhytomyr Oblast", "RU":"Житомирская область", "UA":"Житомирська область"}, "area": 29819.2, "population": 1283201, "numberOfDistricts": 4, "capital":{"EN":"Zhytomyr", "RU":"Житомир", "UA":"Житомир"} },
-        {"id":"crimea", "fullName": {"EN": "Autonomous republic Crimea", "RU":"", "UA":"Автономна Республіка Крим"}, "area": 26100, "population": 2033700, "numberOfDistricts": 10, "capital":{"EN":"Simferopol", "RU":"", "UA":"Сімферополь"}}
+        {"id":"crimea", "fullName": {"EN": "Autonomous republic Crimea", "RU":"Автономная республика Крым", "UA":"Автономна Республіка Крим"}, "area": 26100, "population": 2033700, "numberOfDistricts": 10, "capital":{"EN":"Simferopol", "RU":"Симферополь", "UA":"Сімферополь"}}
     ]
 }

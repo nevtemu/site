@@ -11,7 +11,7 @@ export default function langReducer (state = initialState, action) {
         case 'ua-UA': case 'uk': {
             return {...state,language: 'UA'}
         }
-        case 'ar-AE': {
+        case 'ar-AE': case 'ar': {
             return {...state,language: 'AR'}
         }
         default:

@@ -14,13 +14,14 @@ import {ReactComponent as SliderLayout} from '../assets/layout/slider.svg';
 
 const Main = ({dispatch}) => {
     const layout = useSelector(state => state.layout.layout);
+    const userLang = useSelector(state => state.lang.language);
     let layoutComponent;
     switch(layout){
         case 'map': layoutComponent = <Map clickMode={true} style={{width:800+'px'}}/>; break;
-        case 'table': layoutComponent = <Table data={data}/>; break;
-        case 'list': layoutComponent = <ul id="listContainer" className="flex flex-col gap-1 mb-4">{data.regions.map(listLine=><List key={listLine.id} {...listLine}></List>)}</ul>; break;
-        case 'cards': layoutComponent = <section id="cardsContainer" className="grid grid-cols-equal gap-1 mb-4">{data.regions.map(regionCard=><Card key={regionCard.id} {...regionCard}></Card>)}</section>; break;
-        case 'slider': layoutComponent =<Slider items={data.regions}/>; break;
+        case 'table': layoutComponent = <Table data={data} userLang={userLang}/>; break;
+        case 'list': layoutComponent = <ul id="listContainer" className="flex flex-col gap-1 mb-4">{data.regions.map(listLine=><List key={listLine.id} {...listLine} userLang={userLang}></List>)}</ul>; break;
+        case 'cards': layoutComponent = <section id="cardsContainer" className="grid grid-cols-equal gap-1 mb-4">{data.regions.map(regionCard=><Card key={regionCard.id} {...regionCard} userLang={userLang}></Card>)}</section>; break;
+        case 'slider': layoutComponent =<Slider items={data.regions} userLang={userLang}/>; break;
         default: layoutComponent=<div>Something went wrong!</div>
     }
     return (
