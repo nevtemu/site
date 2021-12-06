@@ -5,7 +5,7 @@
 
 > Added translations for data   
 > Corrected error with Ukrainian language detection   
-
+> Added color theme support (dark/light mode)   
 
 03.12.2021   
 

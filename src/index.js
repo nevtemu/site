@@ -12,9 +12,16 @@ import './index.css';
 
 const rootElement = document.getElementById("root");
 const store = createStore(rootReducer, composeWithDevTools( ));
+//Language
+const browserLang = navigator.language || navigator.userLanguage;
+store.dispatch({type: browserLang})
+//Color theme
+const userPrefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+if (userPrefersLight){store.dispatch({type: 'light-mode'})}
+// let state = store.getState()
+
 render(
   <Provider store={store}>
-  {console.log(store.getState())}
   <BrowserRouter>
     <Routes>
     <Route path="/" element={<App />}>
