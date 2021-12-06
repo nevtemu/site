@@ -14,7 +14,7 @@ const Region = () => {
                     <div className="font-bold flex-grow">{fullName.EN}</div>
                     <div>Area: {area}</div>
                     <div>Population: {population}</div>
-                    <div>Capital: {capital}</div>
+                    <div>Capital: {capital.EN}</div>
                     <div>Number of raions: {numberOfDistricts}</div>
                 </div>
                 <Link to='/'><button>Back</button></Link>

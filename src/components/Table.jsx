@@ -75,7 +75,7 @@ function Table({ columns, data }) {
         ],
         []
       )
-      let data2 = data.regions.map(region => ({region : [<Flag region={region.id} style={{width:30+'px', display:'inline-block', marginRight: 5+'px'}}/>,region.fullName.EN], area: region.area, population: region.population, density: Math.round(region.population/region.area*10)/10, districts: region.numberOfDistricts, capital: region.capital}))
+      let data2 = data.regions.map(region => ({region : [<Flag region={region.id} style={{width:30+'px', display:'inline-block', marginRight: 5+'px'}}/>,region.fullName.EN], area: region.area, population: region.population, density: Math.round(region.population/region.area*10)/10, districts: region.numberOfDistricts, capital: region.capital.EN}))
     
 
     return (

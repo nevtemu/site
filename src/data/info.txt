@@ -1,0 +1,8 @@
+*Зараз в окупованій АР Крим 14 районів, вони будуть ліквідовані після деокупації, а замість них буде створено 10 нових районів. Всього нових районів в Україні 136, з урахуванням районі АР Крим, що не ліквідовані, —  140.
+In this project used data for 10 raions in Crimea
+
+Unkraine's administrative division consists of:
+Autonomous Republic of Crimea
+24 oblasts
+2 cities with special status (Kyiv and Sevastopol)
+For this project only 25 regions used (oblasts and AR crimea)

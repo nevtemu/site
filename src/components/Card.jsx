@@ -13,7 +13,7 @@ const Card = ({fullName, area, population, capital, numberOfDistricts, id, index
                 <div className="statistics">
                     <div>Area: {area}</div>
                     <div>Population: {population}</div>
-                    <div>Capital: {capital}</div>
+                    <div>Capital: {capital.EN}</div>
                     <div>Number of raions: {numberOfDistricts}</div>
                 </div>
             </div>

@@ -6,7 +6,7 @@ function Map (props) {
     switch(lang){
             case 'EN': langFlag='english'; break;
             case 'RU': langFlag='russian'; break;
-            case 'UA': langFlag='ukranian'; break;
+            case 'UA': langFlag='ukrainian'; break;
             case 'AR': langFlag='arabic'; break;
             default: flagComponent=<div>Something went wrong!</div>
         }
