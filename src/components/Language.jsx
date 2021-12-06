@@ -1,9 +1,8 @@
 import Flag from "./Flag"
 
-function Map (props) {
-    const lang = props.userLang;
+function Map ({userLang}) {
     let langFlag;
-    switch(lang){
+    switch(userLang){
             case 'EN': langFlag='english'; break;
             case 'RU': langFlag='russian'; break;
             case 'UA': langFlag='ukrainian'; break;
