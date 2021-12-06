@@ -4,8 +4,10 @@
 06.12.2021   
 
 > Added translations for data   
+> Added multilingual support   
 > Corrected error with Ukrainian language detection   
 > Added color theme support (dark/light mode)   
+> Replaced .css file with custom tailwind theme   
 
 03.12.2021   
 

@@ -5,7 +5,6 @@ import Table from './Table'
 import data from "../data/data.json"
 import Map from "./Map"
 import { connect, useSelector } from "react-redux";
-import "./maps/ukraine.css"
 import {ReactComponent as ListLayout} from '../assets/layout/list.svg';
 import {ReactComponent as CardsLayout} from '../assets/layout/cards.svg';
 import {ReactComponent as MapLayout} from '../assets/layout/map.svg';
