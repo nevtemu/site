@@ -4,7 +4,7 @@ const Footer = ({dispatch}) => {
     const language = useSelector(state => state.lang.language);
     return (
         <>
-            <div>Artem Soroka</div>
+            <div className="dark:bg-gray-600">Artem Soroka</div>
         </>
     ) 
 }

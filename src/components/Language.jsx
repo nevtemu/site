@@ -7,7 +7,7 @@ function Map ({userLang}) {
             case 'RU': langFlag='russian'; break;
             case 'UA': langFlag='ukrainian'; break;
             case 'AR': langFlag='arabic'; break;
-            default: flagComponent=<div>Something went wrong!</div>
+            default: langFlag=<div>Something went wrong!</div>
         }
     return (
       <>

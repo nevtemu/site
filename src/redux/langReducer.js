@@ -2,7 +2,7 @@ const initialState = {language: "EN"};
 
 export default function langReducer (state = initialState, action) {
     switch (action.type) {
-        case 'en-GB': case 'en-US': {
+        case 'en-GB': case 'en-US': case 'en': {
             return {...state,language: 'EN'}
         }
         case 'ru-RU': case 'ru': {
