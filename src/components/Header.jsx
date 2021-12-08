@@ -6,7 +6,7 @@ import LanguageSelector from "./LanguageSelector"
 const Header = ({dispatch}) => {
     const userThemeDark = useSelector(state => state.theme.darkTheme);
     let themeButtonComponent;
-    userThemeDark ? themeButtonComponent = <LightMode/> : themeButtonComponent = <DarkMode/>
+    themeButtonComponent = userThemeDark ? <LightMode/> : <DarkMode/>
     return (
         <div className='flex gap-2 mt-5 dark:bg-gray-500'>
             <div className="relative mr-5" >Menu</div>

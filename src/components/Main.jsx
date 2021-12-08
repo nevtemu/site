@@ -1,6 +1,6 @@
 import Card from './Card'
 import List from './List'
-import Slider from './Slider'
+import Slider from './Slider2'
 import Table from './Table'
 import data from "../data/data.json"
 import Map from "./Map"
