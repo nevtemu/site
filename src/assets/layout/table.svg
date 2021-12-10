@@ -1,21 +1,21 @@
-<svg viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="200" height="150" fill="white"/>
-<rect x="7" y="15" width="58" height="25" rx="2" fill="#C4C4C4"/>
-<rect x="174" y="15" width="20" height="25" rx="2" fill="#C4C4C4"/>
-<rect x="69" y="15" width="101" height="25" rx="2" fill="#C4C4C4"/>
+<svg viewBox="0 0 200 150" className="interactive-svg" xmlns="http://www.w3.org/2000/svg">
+<!-- <rect width="200" height="150" fill="none"/> -->
+<rect x="7" y="15" width="58" height="25" rx="2"/>
+<rect x="174" y="15" width="20" height="25" rx="2"/>
+<rect x="69" y="15" width="101" height="25" rx="2"/>
 <g opacity="0.7">
-<rect x="7" y="106" width="58" height="25" rx="2" fill="#C4C4C4"/>
-<rect x="174" y="106" width="20" height="25" rx="2" fill="#C4C4C4"/>
-<rect x="69" y="106" width="101" height="25" rx="2" fill="#C4C4C4"/>
+<rect x="7" y="106" width="58" height="25" rx="2"/>
+<rect x="174" y="106" width="20" height="25" rx="2"/>
+<rect x="69" y="106" width="101" height="25" rx="2"/>
 </g>
 <g opacity="0.7">
-<rect x="7" y="77" width="58" height="25" rx="2" fill="#C4C4C4"/>
-<rect x="174" y="77" width="20" height="25" rx="2" fill="#C4C4C4"/>
-<rect x="69" y="77" width="101" height="25" rx="2" fill="#C4C4C4"/>
+<rect x="7" y="77" width="58" height="25" rx="2"/>
+<rect x="174" y="77" width="20" height="25" rx="2"/>
+<rect x="69" y="77" width="101" height="25" rx="2"/>
 </g>
 <g opacity="0.7">
-<rect x="7" y="48" width="58" height="25" rx="2" fill="#C4C4C4"/>
-<rect x="174" y="48" width="20" height="25" rx="2" fill="#C4C4C4"/>
-<rect x="69" y="48" width="101" height="25" rx="2" fill="#C4C4C4"/>
+<rect x="7" y="48" width="58" height="25" rx="2"/>
+<rect x="174" y="48" width="20" height="25" rx="2"/>
+<rect x="69" y="48" width="101" height="25" rx="2"/>
 </g>
 </svg>

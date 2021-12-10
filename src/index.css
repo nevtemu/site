@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .interactive-svg {
+        @apply fill-lightFill dark:fill-darkFill hover:fill-lightHover dark:hover:fill-darkHover cursor-pointer
+    }
+    .interactive-svg-a {
+        filter: drop-shadow( 3px 3px 2px rgb(59 130 246) );
+           }
+  }

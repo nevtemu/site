@@ -4,7 +4,7 @@ import Footer from './components/Footer'
 
 export default function App() {
   return (
-    <div>
+    <div className="grid grid-rows-mainPage h-full min-h-screen text-lightMain bg-lightBack dark:bg-darkBack dark:text-darkMain">
       <Header/>
       <Outlet/>
       <Footer/>

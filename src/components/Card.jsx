@@ -2,11 +2,11 @@ import Flag from './Flag.jsx';
 import { Link} from "react-router-dom";
 import data from "../data/data.json"
 
-const Card = ({fullName, area, population, capital, numberOfDistricts, id, index, userLang}) => {
+const Card = ({fullName, area, population, capital, numberOfDistricts, id, userLang}) => {
     const linkAddress = `/region/${id}`;
         return (
             <Link to={linkAddress}>
-            <div className="p-2 border-black border-2 flex flex-col" id={"card"+index}>
+            <div className="p-2  border-2 flex flex-col" >
                 <div className="flex flex-row">
                     <div className='flex-none'><Flag region={id} style={{width:100+'px'}}/></div>
                     <div className="text-center font-bold flex-grow">{fullName[userLang]}</div>

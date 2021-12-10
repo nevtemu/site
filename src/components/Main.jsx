@@ -24,8 +24,8 @@ const Main = ({dispatch}) => {
         default: layoutComponent=<div>Something went wrong!</div>
     }
     return (
-        <>
-        <div className="flex">
+        <main className="mx-5">
+        <div className="flex flex-row gap-1">
 
 
             <div id="layout-map" className="w-12 h-9" onClick={e => dispatch({type: 'map'})}><MapLayout/></div>
@@ -35,7 +35,7 @@ const Main = ({dispatch}) => {
             <div id="layout-list" className="w-12 h-9" onClick={e => dispatch({type: 'list'})}><ListLayout/></div>
         </div>
         {layoutComponent}
-        </>
+        </main>
     ) 
 }
 

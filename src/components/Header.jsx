@@ -8,11 +8,11 @@ const Header = ({dispatch}) => {
     let themeButtonComponent;
     themeButtonComponent = userThemeDark ? <LightMode/> : <DarkMode/>
     return (
-        <div className='flex gap-2 mt-5 dark:bg-gray-500'>
-            <div className="relative mr-5" >Menu</div>
-            <LanguageSelector/>                
-            <div className="w-6" onClick={e => dispatch({type: userThemeDark ? 'light-mode' : 'dark-mode'})}>{themeButtonComponent}</div>
-        </div>
+        <header className="flex flex-row shadow gap-2 py-2 sticky top-0 backdrop-filter backdrop-blur bg-opacity-50">
+            <div className="ml-5 font-bold font-lg hover:text-lightHover dark:hover:text-darkHover" >Menu</div>
+            <div className="w-6 ml-auto" onClick={e => dispatch({type: userThemeDark ? 'light-mode' : 'dark-mode'})}>{themeButtonComponent}</div>
+            <LanguageSelector/> 
+        </header>
     ) 
 }
 

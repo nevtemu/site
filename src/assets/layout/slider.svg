@@ -1,14 +1,14 @@
-<svg viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 200 150" className="interactive-svg" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_2_2)">
-<rect width="200" height="150" fill="white"/>
-<rect x="45" y="24" width="111" height="68" rx="3" fill="#C4C4C4"/>
-<rect x="-72" y="24" width="111" height="68" rx="3" fill="#C4C4C4"/>
-<rect x="163" y="24" width="111" height="68" rx="3" fill="#C4C4C4"/>
-<rect x="55" y="118" width="11.25" height="10" rx="5" fill="#C4C4C4"/>
-<rect x="133.75" y="118" width="11.25" height="10" rx="5" fill="#C4C4C4"/>
-<rect x="114.062" y="118" width="11.25" height="10" rx="5" fill="#C4C4C4"/>
-<rect x="94.375" y="118" width="11.25" height="10" rx="5" fill="#C4C4C4"/>
-<rect x="74.6875" y="118" width="11.25" height="10" rx="5" fill="#C4C4C4"/>
+<!-- <rect width="200" height="150" fill="none"/> -->
+<rect x="45" y="24" width="111" height="68" rx="3"/>
+<rect x="-72" y="24" width="111" height="68" rx="3"/>
+<rect x="163" y="24" width="111" height="68" rx="3"/>
+<rect x="55" y="118" width="11.25" height="10" rx="5"/>
+<rect x="133.75" y="118" width="11.25" height="10" rx="5"/>
+<rect x="114.062" y="118" width="11.25" height="10" rx="5"/>
+<rect x="94.375" y="118" width="11.25" height="10" rx="5"/>
+<rect x="74.6875" y="118" width="11.25" height="10" rx="5"/>
 </g>
 <defs>
 <clipPath id="clip0_2_2">
