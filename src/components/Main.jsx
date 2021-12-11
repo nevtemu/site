@@ -1,9 +1,11 @@
 import Card from './Card'
 import List from './List'
-import Slider from './Slider2'
+import Slider from './Carousel'
 import Table from './Table'
 import data from "../data/data.json"
 import Map from "./Map"
+import MapControls from "./MapControls"
+
 import { connect, useSelector } from "react-redux";
 import {ReactComponent as ListLayout} from '../assets/layout/list.svg';
 import {ReactComponent as CardsLayout} from '../assets/layout/cards.svg';
@@ -16,7 +18,7 @@ const Main = ({dispatch}) => {
     const userLang = useSelector(state => state.lang.language);
     let layoutComponent;
     switch(layout){
-        case 'map': layoutComponent = <Map clickMode={true} style={{width:800+'px'}}/>; break;
+        case 'map': layoutComponent = <><Map clickMode={true} style={{width:800+'px'}}/><MapControls/></>; break;
         case 'table': layoutComponent = <Table data={data} userLang={userLang}/>; break;
         case 'list': layoutComponent = <ul id="listContainer" className="flex flex-col gap-1 mb-4">{data.regions.map(listLine=><List key={listLine.id} {...listLine} userLang={userLang}></List>)}</ul>; break;
         case 'cards': layoutComponent = <section id="cardsContainer" className="grid grid-cols-equal gap-1 mb-4">{data.regions.map(regionCard=><Card key={regionCard.id} {...regionCard} userLang={userLang}></Card>)}</section>; break;

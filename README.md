@@ -1,6 +1,13 @@
 # Starting new website project    
 
 ### Change log:   
+11.12.2021   
+
+> Added layout styles   
+> Added styles for dark/light theme   
+> Added custom tailwind classes   
+> Removed card id generation      
+
 06.12.2021   
 
 > Added translations for data   
