@@ -25,7 +25,7 @@ render(
   <BrowserRouter>
     <Routes>
     <Route path="/" element={<App />}>
-        <Route index path="" element={<Main />}/>
+        <Route index element={<Main />}/>
         <Route path="region/:regionID" element={<Region />}/>
       </Route>
       </Routes>

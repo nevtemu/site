@@ -28,8 +28,6 @@ const Main = ({dispatch}) => {
     return (
         <main className="mx-5">
         <div className="flex flex-row gap-1">
-
-
             <div id="layout-map" className="w-12 h-9" onClick={e => dispatch({type: 'map'})}><MapLayout/></div>
             <div id="layout-cards" className="w-12 h-9" onClick={e => dispatch({type: 'cards'})}><CardsLayout/></div>
             <div id="layout-slider" className="w-12 h-9" onClick={e => dispatch({type: 'slider'})}><SliderLayout/></div>
@@ -40,5 +38,4 @@ const Main = ({dispatch}) => {
         </main>
     ) 
 }
-
 export default connect()(Main);
