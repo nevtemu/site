@@ -5,6 +5,7 @@ import Table from './Table'
 import data from "../data/data.json"
 import Map from "./Map"
 import MapControls from "./MapControls"
+import BreadCrumbs from "./BreadCrumbs"
 
 import { connect, useSelector } from "react-redux";
 import {ReactComponent as ListLayout} from '../assets/layout/list.svg';
@@ -28,6 +29,7 @@ const Main = ({dispatch}) => {
     return (
         <main className="mx-5">
         <div className="flex flex-row gap-1">
+            <BreadCrumbs layout={layout} userLang={userLang}/>
             <div id="layout-map" className="w-12 h-9" onClick={e => dispatch({type: 'map'})}><MapLayout/></div>
             <div id="layout-cards" className="w-12 h-9" onClick={e => dispatch({type: 'cards'})}><CardsLayout/></div>
             <div id="layout-slider" className="w-12 h-9" onClick={e => dispatch({type: 'slider'})}><SliderLayout/></div>
