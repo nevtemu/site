@@ -1,22 +1,32 @@
-import data from "../data/data.json"
+import { connect, useSelector } from "react-redux";
+import 'rc-slider/assets/index.css';
+import 'rc-tooltip/assets/bootstrap.css';
+import React from 'react';
+import Slider, { SliderTooltip } from 'rc-slider';
+const { createSliderWithTooltip } = Slider;
+const Range = createSliderWithTooltip(Slider.Range);
 
-export default function MapControls () {
-    const raions =[], populations=[], areas=[];
-    data.regions.map(item => {raions.push(item.numberOfDistricts); populations.push(item.population); areas.push(item.area)})
-    const raionsMin = Math.min(...raions);
-    const raionsMax = Math.max(...raions);
-    const areaMin = Math.min(...areas);
-    const areaMax = Math.max(...areas);
-    const populationMin = Math.min(...populations);
-    const populationMax = Math.max(...populations);
+function MapControls ({dispatch}) {
+    let rangeParams = useSelector(state => state.map);
     return (
         <div className="flex flex-column gap-2">
-            <span>Raions</span><input type="range" min={raionsMin} max={raionsMax} value={raionsMax} className="slider" id="rangeRaions"/>
-            <span>Area</span><input type="range" min={areaMin} max={areaMax} value={areaMax} className="slider" id="rangeAreas"/>
-            <span>Population</span><input type="range" min={populationMin} max={populationMax} value={populationMax} className="slider" id="rangePopulations"/>
+          
+           
+    <div className="w-60 mr-5 flex flex-col"> 
+    <span>Raions</span>
+      <Range min={rangeParams.raionsMin} max={rangeParams.raionsMax} dots  defaultValue={[rangeParams.raionsMin, rangeParams.raionsMax]} tipFormatter={value => `${value}`} pushable draggableTrack onChange={e => dispatch(({type: 'highlightRaions', payload: e}))} />
+    </div>
+    <div className="w-60 mr-5 flex flex-col"> 
+    <span>Area</span>
+      <Range min={rangeParams.areaMin} max={rangeParams.areaMax} defaultValue={[rangeParams.areaMin, rangeParams.areaMax]} tipFormatter={value => `${value}km`} draggableTrack pushable allowCross={true} onChange={e => dispatch(({type: 'highlightArea', payload: e}))}/>
+    </div>
+    <div className="w-60 mr-5 flex flex-col"> 
+    <span>Population</span>
+      <Range min={rangeParams.populationMin} max={rangeParams.populationMax} defaultValue={[rangeParams.populationMin, rangeParams.populationMax]} tipFormatter={value => `${value} kk`} pushable draggableTrack onChange={e => dispatch(({type: 'highlightPopulation', payload: e}))} />
+    </div>
+
+
         </div>
     );
 }
-
-
-
+export default connect()(MapControls)
