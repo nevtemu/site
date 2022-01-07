@@ -1,4 +1,6 @@
 {
     "controls":{"back":{"EN":"Back", "RU":"Назад", "UA":"Повернутись"}, "next":{"EN":"Next", "RU":"Следующий" , "UA":"наступний"}},
-    "menu":[]
+    "menu":[],
+    "locations":{"main":{"EN":"Main", "RU":"Главная", "UA":"Головна"}},
+    "layouts":{"map":{"EN":"Map", "RU":"Карта", "UA":"Мапа"}, "table":{"EN":"Table", "RU":"Таблица", "UA":"Таблиця"}, "list":{"EN":"List", "RU":"Список", "UA":"Перелiк"}, "cards":{"EN":"Cards", "RU":"Карточки", "UA":"Картки"}, "carousel":{"EN":"Carousel", "RU":"Галерея", "UA":"Галерея"}}
 }
