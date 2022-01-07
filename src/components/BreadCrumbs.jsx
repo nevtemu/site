@@ -22,7 +22,7 @@ export default function BreadCrumbs ({layout, userLang}){
     return (
         <nav id="breadcrumbs" className="">
             <span id="breadCrumbsOpener" className="ml-5">C:</span>
-            {breadCrumbs.map(level=><Link key={uuid()} to={level.stepPath}> \ <span className="cursor-pointer hover:text-blue-800">{level.stepName}</span></Link>)}
+            {breadCrumbs.reverse().map(level=><Link key={uuid()} to={level.stepPath}> \ <span className="cursor-pointer hover:text-blue-800">{level.stepName}</span></Link>)}
             <span id="breadCrumbsCloser">{` > `}</span>
             <span id="breadCrumbsPointer" className="animate-ping z-0">{`|`}</span>
         </nav>
