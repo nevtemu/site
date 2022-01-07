@@ -10,12 +10,10 @@ module.exports = {
     extend: {
       gridTemplateColumns: {
         equal: 'repeat(auto-fit, minmax(200px, 1fr))',
+        map: 'auto 1fr',
       },
       gridTemplateRows: {
         mainPage: 'auto auto 1fr auto',
-      },
-      gridTemplateColumns: {
-        map: 'auto 1fr',
       },
       colors: {
         darkBack: '#242424',
